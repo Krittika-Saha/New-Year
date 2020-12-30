@@ -14,6 +14,6 @@ app.get("/", function(req, res){
   res.render('home.ejs');
 });
 
-app.listen(2900, function(){
+app.listen(process.env.PORT || 2900, function(){
   console.log("Server started on port 2900.");
 });
