@@ -1,4 +1,3 @@
-//Code from https://codes4education.com/how-to-create-a-countdown-timer-using-javascript/
 
 let daysItem = document.querySelector("#days");
 let hoursItem = document.querySelector("#hours");

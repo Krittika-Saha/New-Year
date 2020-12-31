@@ -1,8 +1,10 @@
 .content{
   height: 400px;
   width:900px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  opacity: 0.5;
 }
-h1{
+h1, h2{
   color:white;
   font-size: 40;
   text-align: center;
@@ -18,33 +20,34 @@ h1{
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-.count-down{
-  border: 4px solid white;
-}
 .big-text{
   font-size: 80px;
-  font-weight: bold;
   color: white
 }
-#day{
-  margin-left: 100px;
+#days{
+  position: relative;
+  left: 90px;
+  top: 50px;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-#hour{
-  margin-left: 300px;
-  margin-top: -170px;
+#hours{
+  position: relative;
+  left: 200px;
+  top: 50px;
+  display: inline-block;
 }
-#min{
-  margin-left: 500px;
-  margin-top: -166px;
+#mins{
+  position: relative;
+  left: 330px;
+  top: 50px;
+  display: inline-block;
 }
-#sec{
-  margin-left: 700px;
-  margin-top: -164px;
+#secs{
+  position: relative;
+  left: 430px;
+  top: 50px;
+  display: inline-block;
 }
-.padding{
-  padding: 50px 500px 50px 0px;
-}
-span{
-  font-size: 20px;
-  color: white;
-}
+
