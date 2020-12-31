@@ -4,9 +4,11 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  
 }
 body{
   letter-spacing: 1px;
+  color: white !important;
 }
 .content{
   height: 400px;
@@ -15,7 +17,6 @@ body{
   opacity: 0.5;
 }
 h1, h2{
-  color:white;
   font-size: 40;
   text-align: center;
   opacity: 2;
@@ -32,7 +33,6 @@ h1, h2{
 }
 .big-text{
   font-size: 80px;
-  color: white;
   padding: 25px;
   
 }
@@ -56,7 +56,13 @@ a{
   font-size: 30px;
   color: white !important;
   position: relative;
-  top: 40px;
-  left: 430px;
+  top: 20px;
+  left: 290px;
   text-decoration: none !important;
+  display: inline-block;
+}
+#credits{
+  position: relative;
+  top: 60px;
+  left: 400px;
 }
