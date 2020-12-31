@@ -5,14 +5,29 @@
     <title>New Year | Count Down</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
   </head>
   <!-- Internal or External css not working, don't know why-->
-  <body style='background-image: url(../images/bkground.png); background-repeat: no-repeat; background-size: cover;'>
+  <body>
     <div class="content center">
       <h1>&#10077;&nbsp;The New Year's Coming!&nbsp;&#10077;</h1><br>
-      <%- include('partials/countdown.ejs')%>
+      <div id='time'>
+      <div class='border'>
+      <p id="days" class="big-text">0</p>
+      <p class='big-text' id='colon1'>:</p>
+      <p id="hours" class="big-text">0</p>
+      <p class='big-text' id='colon3'>:</p>
+      <p id="mins" class="big-text">0</p>
+      <p class='big-text' id='colon2'>:</p>
+      <p id='secs' class="big-text">0</p>
+      
     </div>
+    </div>
+    <a href='https://github.com/Krittika-Saha' target="_blank" class="fab fa-github"></a>
+    </div>
+    
   </body>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
   <script src='js/index.js'></script>
+
 </html>

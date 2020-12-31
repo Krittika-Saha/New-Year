@@ -21,33 +21,6 @@ app.get("/", function(req, res){
 
 });
 
-// app.post("/", function(req, res){
-//   res.redirect('/');
-//   message = 'Thank You'
-//   email_given = req.body.email
-//   let mailOptions = {
-//         from: process.env.GMAIL,
-//         to: email_given,
-//         subject: 'Email from Node-App: A Test Message!',
-//         text: 'Some content to send'
-//   };
-
-//   let transporter = nodemailer.createTransport({
-//         service: 'gmail',
-//         auth: {
-//           type: 'login',
-//           user: process.env.GMAIL,
-//           pass: process.env.PASSWORD,
-//         }
-//   });
-//   transporter.sendMail(mailOptions, function(error, info){
-//         if (error) {
-//           console.log(error);
-//         } else {
-//           console.log('Email sent: ' + info.response);
-//         }
-//   });
-// });
 
 
 
