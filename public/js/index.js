@@ -4,6 +4,7 @@ var countDownDate = new Date("Jan 1, 2021 00:00:00").getTime();
 // Update the count down every 1 second
 var x = setInterval(function() {
 
+  
   // Get today's date and time
   var now = new Date().getTime();
     
@@ -16,16 +17,14 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
-  // Output the result in an element with id="demo"
+  // Output the result in an element with id="time3"
   document.getElementById("time3").innerHTML = days + " : " + hours + " : "
   + minutes + " : " + seconds + " ";
     
+  
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("time3").innerHTML = "Happy New Year";
   }
 }, 1000);
-
-
-
