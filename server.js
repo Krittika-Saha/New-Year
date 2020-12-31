@@ -27,7 +27,7 @@ app.post("/", function(req, res){
   message = 'Thank You'
   email_given = req.body.email
   let mailOptions = {
-        from: 'monoj.aspen@gmail.com',
+        from: process.env.GMAIL,
         to: email_given,
         subject: 'Email from Node-App: A Test Message!',
         text: 'Some content to send'
@@ -37,8 +37,8 @@ app.post("/", function(req, res){
         service: 'gmail',
         auth: {
           type: 'login',
-          user: 'monoj.aspen@gmail.com',
-          pass: process.env.PASSWORD
+          user: process.env.GMAIL,
+          pass: process.env.PASSWORD,
         }
   });
   transporter.sendMail(mailOptions, function(error, info){
